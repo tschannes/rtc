@@ -149,6 +149,10 @@ a:focus {
 .footer .pure-menu a:focus {
     background: none;
 }
+.logout{
+	background-color:#11182f;
+	color:white;
+}
 
 @media (max-width: 767px) {
     .sidebar {

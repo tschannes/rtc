@@ -25,6 +25,8 @@
                 %a.pure-button{:href => "http://spitfiresky.com/blog/getting-started-with-sinatra.html"} Sinatra
               %li.nav-item
                 %a.pure-button{:href => "https://vline.com/developer/docs/getting_started"} V-Line
+              %li.nav-item
+                %a.pure-button{:href => "http://purecss.io/"} Pure
       .content.pure-u-1
         / A wrapper for all the blog posts
         .posts.pure-g
@@ -36,19 +38,36 @@
             .post-description.pure-u-1
               %p
                 / content content to content the contained
-                %a.pure-button#login{:href => "#"} Login
-                %a.pure-button#call{:href => "http://spitfiresky.com/blog/getting-started-with-sinatra.html"} Call
+                %a.pure-button.login{:href => "#"} Login
+                %a.pure-button.call{:href => "http://spitfiresky.com/blog/getting-started-with-sinatra.html"} Call
 				
                 / Here the form is introduced
+                %h1 WebCamVidja
                 
+                %video#video{:autplay => "", :controls => ""} You do not support the Video element
+                %button#existing Do it!
+                / %h2 Create a new element
+                / %button#create Create that element
+                / %h2 Use a canvas!
+                / %p
+                /   You can change the draw method and get access to both 2d and webgl contexts.
+                / %button#canvas Paint that Canvas
+                / %button#setDraw Change Canvas draw method
+                / %h2 WebGL using glfx.js
+                / %p
+                / %button#threed Create a 3d canvas using GLFX
+                / %button#setFilter Change 3d Filter
         %footer.footer
           .pure-menu.pure-menu-horizontal.pure-menu-open
             %ul
               %li
-                %a{:href => "http://purecss.io/"} About
+                %a{:href => "http://purecss.io/"} Pure
               %li
                 %a{:href => "http://twitter.com/yuilibrary/"} Twitter
               %li
                 %a{:href => "http://github.com/yui/pure/"} Github
     %script{:type => "text/javascript",
+        :src  => "javascript/trigger.js"}
+    %script{:type => "text/javascript",
         :src  => "javascript/script.js"}
+      
