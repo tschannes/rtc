@@ -9,6 +9,8 @@
         :src  => "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
     %script{:type => "text/javascript",
         :src  => "https://static.vline.com/vline.js"}
+    %script{:type => "text/javascript",
+        :src  => "javascript/term_js/js/jquery.terminal-0.6.3.min.js"}
     %link{:href => "http://yui.yahooapis.com/pure/0.2.0/pure-min.css", :rel => "stylesheet"}/
     / %link{:href => "/combo/1.3.7?/css/layouts/blog.css", :rel => "stylesheet"}/
     %link(rel="stylesheet" href="/stylesheet/style.css")
@@ -39,35 +41,16 @@
               %p
                 / content content to content the contained
                 %a.pure-button.login{:href => "#"} Login
-                %a.pure-button.call{:href => "http://spitfiresky.com/blog/getting-started-with-sinatra.html"} Call
-				
-                / Here the form is introduced
-                %h1 WebCamVidja
-                
-                %video#video{:autplay => "", :controls => ""} You do not support the Video element
-                %button#existing Do it!
-                / %h2 Create a new element
-                / %button#create Create that element
-                / %h2 Use a canvas!
-                / %p
-                /   You can change the draw method and get access to both 2d and webgl contexts.
-                / %button#canvas Paint that Canvas
-                / %button#setDraw Change Canvas draw method
-                / %h2 WebGL using glfx.js
-                / %p
-                / %button#threed Create a 3d canvas using GLFX
-                / %button#setFilter Change 3d Filter
+                %a.pure-button.call{:href => "#"} Call
+                %video
         %footer.footer
           .pure-menu.pure-menu-horizontal.pure-menu-open
             %ul
               %li
-                %a{:href => "http://purecss.io/"} Pure
-              %li
-                %a{:href => "http://twitter.com/yuilibrary/"} Twitter
-              %li
-                %a{:href => "http://github.com/yui/pure/"} Github
-    %script{:type => "text/javascript",
-        :src  => "javascript/trigger.js"}
+                %a{:href => "http://github.com/tschannes/"} Github
     %script{:type => "text/javascript",
         :src  => "javascript/script.js"}
-      
+    %script{:type => "text/javascript",
+        :src  => "javascript/trigger.js"}
+    / :javascript
+    /   vlineShell('callmemaybe', $('.login'));
