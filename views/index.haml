@@ -38,19 +38,21 @@
             %header.post-header
               %h2.post-title.pure-u-1 Testing rtc
             .post-description.pure-u-1
-              %p
+              %div#video
                 / content content to content the contained
-                %a.pure-button.login{:href => "#"} Login
-                %a.pure-button.call{:href => "#"} Call
-                %video
+              %a.pure-button.login{:href => "#"} Login
+              %a.pure-button.call{:href => "#"} Call
+                
         %footer.footer
           .pure-menu.pure-menu-horizontal.pure-menu-open
             %ul
               %li
                 %a{:href => "http://github.com/tschannes/"} Github
-    %script{:type => "text/javascript",
-        :src  => "javascript/script.js"}
+    / %script{:type => "text/javascript",
+    /     :src  => "javascript/script.js"}
     %script{:type => "text/javascript",
         :src  => "javascript/trigger.js"}
+    %script{:type => "text/javascript",
+        :src  => "javascript/last.js"}
     / :javascript
     /   vlineShell('callmemaybe', $('.login'));

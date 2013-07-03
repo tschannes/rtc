@@ -153,7 +153,11 @@ a:focus {
 	background-color:#11182f;
 	color:white;
 }
-
+#video{
+    width:50%;
+    height:auto;
+    background:transparent;
+}
 @media (max-width: 767px) {
     .sidebar {
         width: 100%;
